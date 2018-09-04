@@ -7,14 +7,14 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private int damage = 1;
 
-    private Collider2D myCollider;
-    private Rigidbody2D myRigidbody;
+    protected Collider2D myCollider;
+    protected Rigidbody2D myRigidbody;
 
     [SerializeField]
-    private float force = 10F;
+    protected float force = 10F;
 
     [SerializeField]
-    private float autoDestroyTime = 5F;
+    protected float autoDestroyTime = 5F;
 
     // Use this for initialization
     private void Start()
@@ -30,6 +30,6 @@ public class Bullet : MonoBehaviour
     private void AutoDestroy()
     {
         Destroy(gameObject);
-        Destroy(gameObject);
+        
     }
 }

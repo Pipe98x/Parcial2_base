@@ -1,0 +1,19 @@
+Feedback
+
+Examen (3.5/5.0)
+ * Bullet no se destruye una vez impacta un hazard.
+ * Se pudo haber cambiado el color del APBullet para diferenciarlos más rápidamente. La velocidad de disparo sí es diferente.
+ * APBullet no destruye los hazards. Dependiendo de dónde se impacte, esto hace que el hazard aún pueda caer sobre un shelter o traspasar la posición del jugador.
+ * Hay un NullReference cuando el jugador impacta con un Hazard.
+ * El juego no es capaz de instanciar Invaders. No se puede probar.
+ * Él código de Invader no parece implementar movimiento mientras cae.
+ * Las implementaciones de Invader y Debris ignoran el Start de Hazard, por lo que el Rigidbody y el Collider del GameObject nunca se almacenan.
+ * Por qué el spawner valida contra 3 elementos para generar? Si yo cambio el arreglo para que genere más hazards, toca cambiar código.
+ * Shelter.Resistencia ignora completamente Shelter.MaxResistance al iniciar el juego. Si pongo MaxResistance = 1 y  Resistencia = 5, la resistencia del shelter es 5 y no 1, que se supone es lo máximo que debería tener.
+ * El tiempo de regeneración del shelter no se cancela al recibir daño.
+ * No hay GameOver al destruir el primer shelter.
+
+Bonificación (0.0/0.5)
+ * No se presenta propuesta para la bonificación. 
+
+Total: 3.5 / 5.0
